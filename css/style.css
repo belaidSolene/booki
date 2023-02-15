@@ -1,0 +1,706 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* FONT */
+h1,
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.h3-style {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.filter-text {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+p,
+a {
+    font-size: 16px;
+}
+
+.description p {
+    font-size: 14px;
+}
+
+/* GENERALS STYLE */
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-solid {
+    color: #0065FC;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+
+.fa-star {
+    font-size: 12px;
+}
+
+.grey-star {
+    color: #F2F2F2;
+}
+
+/*
+HEADER
+*/
+header {
+    margin: 0 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 19px;
+    object-fit: contain;
+}
+
+/* MENU */
+nav ul {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    gap: 43px;
+}
+
+nav li {
+    width: 100%;
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 47px 5px;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 45px;
+}
+
+/* 
+    MAIN
+
+    HAUT-PAGE
+*/
+
+/* BANNIERE */
+.haut-page {
+    margin: 5px
+}
+
+/* SEARCH */
+form {
+    width: 30%;
+    height: 55px;
+    padding: 19px 0;
+    display: flex;
+}
+
+form .fa-location-dot {
+    color: #000;
+    align-self: center;
+    font-size: 1.5em;
+    background-color: #F2F2F2;
+    border-radius: 20px 0 0 20px;
+    padding: 15.5px;
+}
+
+input {
+    border: 1px solid #F2F2F2;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 8px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.search-button {
+    background-color: #0065FC;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+    padding: 16px 14px;
+}
+
+form .fa-magnifying-glass {
+    color: #fff;
+    display: none;
+}
+
+/* FILTER */
+.sect-filter {
+    display: flex;
+    align-items: center;
+}
+
+.box-filter {
+    display: flex;
+}
+
+.filter-row {
+    display: flex;
+}
+
+.filter {
+    height: 50px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 0 13px;
+    margin: 20px;
+}
+
+.filter .fa-solid {
+    font-size: 22px;
+    padding-right: 12px;
+}
+
+
+.filter:hover {
+    background-color: #DEEBFF;
+}
+
+/* INFO */
+.box-info {
+    align-items: baseline;
+}
+
+.border-i {
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    justify-content: center;
+    position: relative;
+    bottom: 2px;
+}
+
+.fa-info {
+    font-size: 11px;
+    margin: 5px;
+    text-align: center;
+}
+
+.info {
+    display: inline-block;
+    margin: 5px 0 15px 0;
+    padding: 8px;
+}
+
+/* 
+SECTION HOTEL
+*/
+.sect-hotel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-hotel {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 0 25px 28px 25px;
+    margin: 15px;
+}
+
+.part-hotel {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box-hotel h2 {
+    padding: 26px 15px 10px
+}
+
+.hotel-row {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.hotel-row a {
+    display: inline-block;
+    width: 32%;
+}
+
+.card {
+    background-color: #fff;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    box-shadow: 3px 0 1em rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+}
+
+.card-hotel {
+    height: 199px;
+    flex-direction: column;
+}
+
+.card-hotel img {
+    height: 62%;
+    object-fit: cover;
+}
+
+/* same padding for ALL hotel cards */
+.description {
+    padding: 10px 5px 7px 10px;
+}
+
+.desc-hotel {
+    line-height: 10px;
+}
+
+/* HOTELS POPULAIRES */
+.part-hotel-pop {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.title-hotel-pop {
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-hotel-pop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card-hotel-pop {
+    height: 144px;
+}
+
+.card-hotel-pop img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.desc-hotel-pop {
+    line-height: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 
+SECTION ACTIVITY 
+*/
+.sect-activity {
+    padding: 20px 15px;
+    margin: 15px;
+}
+
+.sect-activity h2 {
+    padding: 0 15px 30px;
+}
+
+.box-activity {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-activity a {
+    display: inline-block;
+    width: 23%;
+}
+
+.card-activity {
+    height: 444px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 0 1em rgba(0, 0, 0, 0.3);
+}
+
+.card-activity img {
+    width: 100%;
+    height: 87.5%;
+    object-fit: cover;
+}
+
+.card-activity h4 {
+    padding-left: 7px;
+    margin: 12px
+}
+
+/*
+FOOTER 
+*/
+footer {
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 35px 0;
+    margin-top: 86px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-contain {
+    width: 100%;
+    padding: 0 90px;
+}
+
+
+/* 
+    TABLET FORMAT
+*/
+@media screen and (768px <=width <=992px) {
+    /* 
+    HEADER
+    */
+
+    header {
+        margin: 0 36px;
+    }
+
+    /* 
+    MAIN
+    */
+
+    .haut-page {
+        margin: 5px 36px;
+    }
+
+    /* FILTERS */
+    .filter {
+        margin: 13px;
+    }
+
+    .filter .fa-solid {
+        font-size: 18px;
+    }
+
+    .filter-text {
+        font-size: 12px;
+    }
+
+    /* 
+    HOTEL SECTION
+    */
+    .sect-hotel {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .box-hotel {
+        width: 90%;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .hotel-row a {
+        width: 29%;
+    }
+
+    /* HOTELS POPULAIRES */
+
+    .box-hotel-pop {
+        flex-direction: row;
+    }
+
+    .box-hotel-pop a {
+        display: inline-block;
+        width: 32%;
+    }
+
+    .card-hotel-pop img {
+        width: 41%;
+    }
+
+    /* 
+    ACTIVITY SECTION
+    */
+    .card-activity {
+        height: 267px;
+    }
+
+    .card-activity img {
+        height: 79%;
+    }
+
+    .desc-hotel-pop {
+        line-height: 14px;
+    }
+
+    .card-activity h4 {
+        padding-left: 7px;
+        margin: 7px
+    }
+}
+
+/*
+    SMARTPHONE FORMAT
+*/
+
+@media screen and (width < 768px) {
+    body {
+        margin: 0;
+    }
+
+    /* FONT */
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+
+    .filter-title {
+        font-size: 16px;
+
+    }
+
+    .filter-text {
+        font-size: 15px;
+    }
+
+    .info {
+        font-size: 13px;
+    }
+
+    /* 
+   HEADER
+   */
+    header {
+        margin: 24px 0 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* MENU */
+    nav {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+
+    nav a {
+        border-bottom: 2px solid #f2f2f2;
+        padding: 0 0 33px;
+    }
+
+    nav a:hover {
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+        border-top: #fff;
+        padding-top: 0;
+    }
+
+    /*
+    MAIN 
+    */
+    main {
+        margin: 8px;
+    }
+
+    /* HAUT-PAGE */
+    h1 {
+        margin: 22px 0 15px;
+    }
+
+    .retour-ligne {
+        white-space: pre-line;
+    }
+
+    /* SEARCH */
+    form {
+        width: 100%;
+    }
+
+    form .fa-location-dot {
+        font-size: 1.2em;
+        padding: 18px;
+    }
+
+    input {
+        width: 100%;
+        max-width: 316px;
+        font-size: 15px;
+    }
+
+    .search-button .fa-magnifying-glass {
+        display: block;
+    }
+
+    .search-button-text {
+        display: none;
+    }
+
+    /* FILTERS */
+    .sect-filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .box-filter {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .filter {
+        height: 38px;
+        width: 45%;
+        max-width: 160px;
+        margin: 5px;
+        overflow: hidden;
+    }
+
+    .filter .fa-solid {
+        font-size: 14px;
+        padding-right: 5px;
+    }
+
+    .filter-text {
+        font-size: 61%;
+
+    }
+
+    /* INFO */
+    .box-info {
+        align-items: center;
+    }
+
+    .border-i {
+        bottom: 6px;
+    }
+
+
+
+    /* 
+    HOTEL SECTION
+    */
+    .sect-hotel {
+        width: 100%;
+        margin: 0 0 47px;
+
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-hotel {
+        width: 100%;
+        padding: 15px 20px 47px;
+        border-radius: 0;
+    }
+
+    .part-hotel {
+        background-color: #fff;
+    }
+
+    .afficher-plus {
+        display: none;
+    }
+
+    .hotel-row,
+    .box-hotel-pop {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* same width for ALL cards*/
+    .hotel-row a,
+    .box-hotel-pop a,
+    .box-activity a {
+        width: 91%;
+    }
+
+    .card-hotel {
+        height: 220px;
+    }
+
+    .card-hotel img {
+        height: 66%;
+    }
+
+    /* HOTELS POPULAIRES */
+    .part-hotel-pop h2 {
+        padding-bottom: 25px;
+    }
+
+    /* 
+    ACTIVITY SECTION 
+    */
+    .sect-activity {
+        width: 100%;
+        padding: 0;
+        margin: 30px 0;
+    }
+
+    .box-activity {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card-activity {
+        height: 210px;
+    }
+
+    .card-activity img {
+        height: 70%;
+    }
+
+    /* 
+    FOOTER
+    */
+    footer {
+        padding: 0 24px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-contain {
+        padding: 20px 0 34px;
+    }
+}
