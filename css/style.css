@@ -2,7 +2,7 @@ body {
     font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 22px;
 }
 
 #container {
@@ -385,6 +385,10 @@ footer {
     TABLET FORMAT
 */
 @media screen and (768px <=width <=992px) {
+    body {
+        margin: 0 auto;
+    }
+    
     /* 
     HEADER
     */
@@ -541,6 +545,10 @@ footer {
     */
 
     /* HAUT-PAGE */
+    .haut-page {
+        margin: 5px 12px;
+    }
+
     h1 {
         margin: 22px 0 15px;
     }
